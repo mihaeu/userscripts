@@ -3,7 +3,7 @@
 // @namespace    http://github.com
 // @version      0.1
 // @description  Add links for trending and stars to GitHub
-// @author       Michael Haeuslmann <haeuslmann@gmail.com>
+// @author       Michael Haeuslmann <michael.haeuslmann@gmail.com>
 // @include      /^https://github.com/.*$/
 // @grant        none
 // ==/UserScript==
