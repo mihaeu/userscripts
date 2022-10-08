@@ -4,7 +4,8 @@
 // @version      0.1
 // @description  Add nav items for /stars and /trending to GitHub
 // @author       Michael Haeuslmann <michael.haeuslmann@gmail.com>
-// @include      /^https://github.com/.*$/
+// @match        https://github.com/*
+// @icon         https://github.githubassets.com/favicons/favicon.svg
 // @grant        none
 // ==/UserScript==
 
@@ -18,6 +19,6 @@
             </a>
         </div>`;
 
-    document.querySelector('nav[aria-label="Global"]').innerHTML += `${navItem(`${flameSvg} Trending`, 'trending')}${navItem(`${starSvg} Stars`, 'stars')}`;
+    document.querySelector('nav[aria-label="Global"]').innerHTML += `${navItem(`🔥 Trending`, 'trending')}${navItem(`⭐ Stars`, 'stars')}`;
 })();
 
