@@ -6,6 +6,8 @@
 // @author       Michael Haeuslmann <michael.haeuslmann@gmail.com>
 // @match        https://www.warmshowers.org/*
 // @icon         https://www.warmshowers.org/sites/all/themes/warmshowers_up/favicon.ico
+// @downloadURL  https://raw.githubusercontent.com/mihaeu/userscripts/main/src/warmshowers.org/warmshowers-org-fix-menu-ux.js
+// @updateURL    https://raw.githubusercontent.com/mihaeu/userscripts/main/src/warmshowers.org/warmshowers-org-fix-menu-ux.js
 // @grant        none
 // ==/UserScript==
 

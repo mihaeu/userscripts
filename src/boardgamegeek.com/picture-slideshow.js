@@ -3,8 +3,10 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
-// @author       Michael Haeuslmann <haeuslmann@gmail.com
+// @author       Michael Haeuslmann <michael.haeuslmann@gmail.com>
 // @match        https://boardgamegeek.com/*
+// @downloadURL  https://raw.githubusercontent.com/mihaeu/userscripts/main/src/boardgamegeek.com/picture-slideshow.js
+// @updateURL    https://raw.githubusercontent.com/mihaeu/userscripts/main/src/boardgamegeek.com/picture-slideshow.js
 // @grant        none
 // ==/UserScript==
 
