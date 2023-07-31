@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         github.com: Add nav items for /stars and /trending
 // @namespace    http://github.com
-// @version      0.1
+// @version      0.2
 // @description  Add nav items for /stars and /trending to GitHub
 // @author       Michael Haeuslmann <michael.haeuslmann@gmail.com>
 // @match        https://github.com/*
@@ -13,12 +13,15 @@
 
 (function() {
     const navItem = (buttonIconAndText, link) => `
-        <div class="d-flex position-relative">
-            <a class="js-selected-navigation-item Header-link flex-auto mt-md-n3 mb-md-n3 py-2 py-md-3 mr-0 mr-md-3 border-top border-md-top-0 border-white-fade-15" href="https://github.com/${link}">
-              ${buttonIconAndText}
+        <li>
+            <a href="/${link}" data-view-component="true" class="AppHeader-context-item">
+                <span class="AppHeader-context-item-label  ">
+                    ${buttonIconAndText}
+                </span>
             </a>
-        </div>`;
+        </li>`;
 
-    document.querySelector('nav[aria-label="Global"]').innerHTML += `${navItem(`🔥 Trending`, 'trending')}${navItem(`⭐ Stars`, 'stars')}`;
+    document.querySelector('nav[aria-label="Page context"] ul li').innerHTML += `${navItem(`🔥 Trending`, 'trending')}${navItem(`⭐ Stars`, 'stars')}`;
 })();
+
 
